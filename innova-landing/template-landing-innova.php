@@ -147,48 +147,72 @@
     }
 
     /* --- Cabecera --- */
-    .iv-header {
-      position: sticky;
-      top: 0;
-      z-index: 50;
-      display: grid;
-      grid-template-columns: 200px 1fr auto;
-      align-items: center;
-      gap: 32px;
-      padding: 22px 48px;
-      background: rgba(251,250,247,0.92);
-      backdrop-filter: blur(8px);
-      border-bottom: 1px solid var(--c-mist);
-    }
-    .iv-header__brand {
-      font-family: var(--font-sans);
-      font-weight: 300;
-      font-size: 19px;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-    }
-    .iv-header__nav { display: flex; gap: 36px; justify-content: center; }
-    .iv-header__nav a {
-      font-size: 12px;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      color: var(--c-graphite-700);
-      padding: 6px 0;
-      position: relative;
-      transition: color 200ms ease;
-    }
-    .iv-header__nav a:hover { color: var(--c-ink); }
-    .iv-header__cta {
-      display: inline-block;
-      font-size: 11px;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      padding: 12px 18px;
-      border: 1px solid var(--c-ink);
-      color: var(--c-ink);
-      transition: all 200ms ease;
-    }
-    .iv-header__cta:hover { background: var(--c-ink); color: var(--c-paper); }
+.iv-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 32px;
+  padding: 22px 48px;
+  background: rgba(251,250,247,0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--c-mist);
+}
+
+.iv-header__brand {
+  font-family: var(--font-sans);
+  font-weight: 300;
+  font-size: 19px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+/* 👇 elimina comportamiento raro del nav (si aún existe en HTML) */
+.iv-header__nav {
+  display: none;
+}
+
+.iv-header__nav a {
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--c-graphite-700);
+  padding: 6px 0;
+  position: relative;
+  transition: color 200ms ease;
+}
+
+.iv-header__nav a:hover {
+  color: var(--c-ink);
+}
+    
+.iv-header__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+
+  padding: 12px 18px;
+  border: 1px solid var(--c-ink);
+  color: var(--c-ink);
+
+  width: auto;
+  white-space: nowrap;
+
+  justify-self: end;
+
+  transition: all 200ms ease;
+}
+
+.iv-header__cta:hover {
+  background: var(--c-ink);
+  color: var(--c-paper);
+}
 
     /* --- Contenedor de sección --- */
     .iv-section {
@@ -417,75 +441,106 @@
       border-color: var(--c-graphite-700) !important;
     }
 
-    /* --- Footer --- */
-    .iv-footer { background: var(--c-ink); color: var(--c-paper); padding: 80px 48px 32px; }
-    .iv-footer__top {
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      gap: 80px;
-      max-width: 1440px;
-      margin: 0 auto 64px;
-    }
-    .iv-footer__brand {
-      font-family: var(--font-sans);
-      font-weight: 300;
-      font-size: 20px;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      margin: 0 0 16px;
-    }
-    .iv-footer__tag { margin: 0; }
-    .iv-footer__tag em {
-      font-family: var(--font-display);
-      font-style: italic;
-      font-weight: 400;
-      font-size: 28px;
-      letter-spacing: -0.02em;
-    }
-    .iv-footer__cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
-    .iv-footer__cols h4 {
-      font-size: 10px;
-      letter-spacing: 0.32em;
-      text-transform: uppercase;
-      color: rgba(251,250,247,0.5);
-      font-weight: 400;
-      margin: 0 0 18px;
-    }
-    .iv-footer__cols ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    .iv-footer__cols a {
-      font-size: 14px;
-      color: var(--c-paper);
-      transition: color 200ms ease;
-    }
-    .iv-footer__cols a:hover { color: var(--c-slate-200); }
-    .iv-footer__bottom {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 1440px;
-      margin: 0 auto;
-      padding-top: 32px;
-      border-top: 1px solid rgba(251,250,247,0.1);
-      font-size: 11px;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: rgba(251,250,247,0.5);
-      gap: 24px;
-      flex-wrap: wrap;
-    }
-    .iv-footer__bottom a { color: rgba(251,250,247,0.5); transition: color 200ms ease; }
-    .iv-footer__bottom a:hover { color: var(--c-paper); }
-  </style>
-</head>
-<body <?php body_class('innova-landing'); ?>>
-<?php wp_body_open(); ?>
+   /* --- Footer --- */
+.iv-footer {
+  background: var(--c-ink);
+  color: var(--c-paper);
+  padding: 80px 48px 32px;
+}
+
+.iv-footer__top {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 80px;
+  max-width: 1440px;
+  margin: 0 auto 64px;
+
+  justify-content: end;
+  text-align: right;
+}
+
+.iv-footer__brand {
+  font-family: var(--font-sans);
+  font-weight: 300;
+  font-size: 20px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin: 0 0 16px;
+}
+
+.iv-footer__tag {
+  margin: 0;
+}
+
+.iv-footer__tag em {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: -0.02em;
+}
+
+.iv-footer__cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+
+  justify-content: end;
+  text-align: right;
+}
+
+.iv-footer__cols h4 {
+  font-size: 10px;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: rgba(251,250,247,0.5);
+  font-weight: 400;
+  margin: 0 0 18px;
+}
+
+.iv-footer__cols ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.iv-footer__cols a {
+  font-size: 14px;
+  color: var(--c-paper);
+  transition: color 200ms ease;
+}
+
+.iv-footer__cols a:hover {
+  color: var(--c-slate-200);
+}
+
+.iv-footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 32px;
+  border-top: 1px solid rgba(251,250,247,0.1);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(251,250,247,0.5);
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.iv-footer__bottom a {
+  color: rgba(251,250,247,0.5);
+  transition: color 200ms ease;
+}
+
+.iv-footer__bottom a:hover {
+  color: var(--c-paper);
+}
 
 <!-- ============================================================
      CABECERA
@@ -634,7 +689,7 @@
 
   <div class="iv-compare__head">
     <p class="iv-eyebrow">Material</p>
-    <h2 class="iv-h2">No todo el Solid Surface<br><em>es igual.</em></h2>
+    <h2 class="iv-h2">No todo el Solid<br>Surface <em>es igual.</em></h2>
     <p class="iv-body">El porcentaje de acrílico marca la longevidad del color.</p>
   </div>
 
@@ -644,14 +699,14 @@
       <p class="iv-compare__no">Alternativas económicas</p>
       <p class="iv-compare__pct">2%</p>
       <p class="iv-compare__lbl">Acrílico</p>
-      <p class="iv-compare__note">Absorbe manchas. No se repara. Decolora.</p>
+      <p class="iv-compare__note">Amarillea.</p>
     </div>
 
     <div class="iv-compare__col">
       <p class="iv-compare__no">Gama media</p>
       <p class="iv-compare__pct">10%</p>
       <p class="iv-compare__lbl">Acrílico</p>
-      <p class="iv-compare__note">Mejor que lo básico. Limitaciones con el calor.</p>
+      <p class="iv-compare__note">Amarillea.</p>
     </div>
 
     <div class="iv-compare__col iv-compare__col--pure">
@@ -677,15 +732,11 @@
       <p class="iv-eyebrow">Contacto</p>
       <h2 class="iv-h2">Solicita tu<br><em>presupuesto.</em></h2>
       <p class="iv-body">
-        Cuéntanos tu proyecto y te respondemos en menos de 24&nbsp;horas.
+        Cuéntanos tu proyecto y te responderemos en menos de 24&nbsp;horas.
       </p>
     </div>
 
-    <!-- ★ WPFORMS — reemplaza XXXX por el ID de tu formulario en WPForms
-         Pasos: WPForms → Todos los formularios → anota el ID de la columna "Acceso rápido"
-         Si usas Gravity Forms: [gravityforms id="XXXX"]
-         Si usas Contact Form 7: [contact-form-7 id="XXXX"]              -->
-    <?php echo do_shortcode('[wpforms id="XXXX"]'); ?>
+    <?php echo do_shortcode('[contact-form-7 id="e3a879b" title="Landing page"]'); ?>
 
   </div>
 </section>
@@ -699,7 +750,7 @@
   <div class="iv-footer__top">
 
    <div>
-  <img src="https://www.innovasp.com/wp-content/uploads/2020/05/innovasp.png"
+  <img src="https://www.innovasp.com/wp-content/uploads/2026/05/LOGO-INNOVA-02.png"
        alt="INNOVA Superficies Sólidas"
        style="max-width:180px; height:auto;">
 </div>
