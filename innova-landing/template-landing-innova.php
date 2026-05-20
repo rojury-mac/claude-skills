@@ -736,8 +736,7 @@
       </p>
     </div>
 
-    <?php echo do_shortcode('[contact-form-7 id="e3a879b" title="Landing page"]'); ?>
-
+<p>TEST LANDING OK</p>
   </div>
 </section>
 
