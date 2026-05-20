@@ -493,16 +493,19 @@
      ============================================================ -->
 <header class="iv-header" id="inicio">
 
-  <div class="iv-header__brand">INNOVA</div>
-
-  <nav class="iv-header__nav" aria-label="Navegación principal">
-    <a href="#inicio">Inicio</a>
-  </nav>
+  <div class="iv-header__brand">
+    <a href="https://innovasp.com" target="_blank" rel="noopener noreferrer">
+      <img 
+        src="https://www.innovasp.com/wp-content/uploads/2020/05/innovasp.png" 
+        alt="Innova SP"
+        style="height: 50px; width: auto;"
+      >
+    </a>
+  </div>
 
   <a href="#presupuesto" class="iv-header__cta">Presupuesto</a>
 
 </header>
-
 
 <!-- ============================================================
      HERO
@@ -524,7 +527,7 @@
     <div class="iv-hero__actions">
 
       <!-- ★ PDF — cambia esta URL por la ruta real a tu catálogo -->
-      <a href="/wp-content/uploads/innova-catalogo-lex-2026.pdf"
+      <a href="/wp-content/uploads/2026/05/INNOVA_Serie_LEX.pdf"
          class="iv-btn iv-btn--primary"
          target="_blank"
          rel="noopener noreferrer">
@@ -541,9 +544,11 @@
          <img src="/wp-content/uploads/innova-hero.jpg"
               alt="Encimera INNOVA Serie LEX en cocina moderna"
               style="width:100%;aspect-ratio:4/5;object-fit:cover;">         -->
-    <div class="iv-img-slot" style="aspect-ratio:4/5;">
-      <span class="iv-img-slot__label">Fotografía de producto · 4:5</span>
-    </div>
+   <div>
+  <img src="https://www.innovasp.com/wp-content/uploads/2026/05/ENCIMERA-LEX-04.jpg"
+       alt="Encimera INNOVA Serie LEX"
+       style="width:100%; aspect-ratio:4/5; object-fit:cover;">
+</div>
   </div>
 
 </section>
@@ -554,12 +559,11 @@
      ============================================================ -->
 <section class="iv-section">
   <div class="iv-quote">
-    <p class="iv-quote__body">"Materia<br>viva."</p>
+    <p class="iv-quote__body">Dos piezas,<br>cero juntas</p>
     <p class="iv-quote__sub">
-      Cada pieza INNOVA está fabricada con acrílico puro al 100&nbsp;%, sin rellenos ni
-      impurezas. Una superficie que no solo dura, sino que mejora con el tiempo.
+      El lavabo se une a la encimera formando una única superficie en continuidad, sin fisuras ni acumulación de suciedad. La higiene es prioridad.
     </p>
-    <p class="iv-quote__attr">— INNOVA · Serie LEX 2026</p>
+    <p class="iv-quote__attr">— Serie LEX, por Innova.</p>
   </div>
 </section>
 
@@ -570,77 +574,58 @@
 <section class="iv-proyectos">
 
   <div class="iv-proyectos__head">
-    <p class="iv-eyebrow">Ambientes</p>
-    <h2 class="iv-h2">Proyectos <em>reales.</em></h2>
+    <p class="iv-eyebrow">Proyectos</p>
+    <h2 class="iv-h2"><em>Ambientes.</em></h2>
     <p class="iv-body">
-      Espacios donde la calidad del material habla por sí sola.
+      Cada pieza de INNOVA está fabricada con Solid Surface 100% acrílico, sin rellenos ni impurezas. Una superficie que no solo dura, sino que se mantiene impecable con el tiempo.
     </p>
   </div>
 
   <!-- Imagen grande 16:9 -->
   <div class="iv-proyectos__row iv-proyectos__big">
     <!-- ★ IMAGEN-2 — imagen principal de galería (16:9) -->
-    <div class="iv-img-slot">
-      <span class="iv-img-slot__label">Ambiente principal · 16:9</span>
-    </div>
+    <div>
+  <img src="https://www.innovasp.com/wp-content/uploads/2026/05/ENCIMERA-LEX-01.jpg"
+       alt="Encimera INNOVA Serie LEX"
+       style="width:100%; aspect-ratio:16/9; object-fit:cover;">
+</div>
   </div>
 
   <!-- Fila de dos imágenes -->
   <div class="iv-proyectos__row iv-proyectos__row--split">
-    <!-- ★ IMAGEN-3 -->
-    <div class="iv-img-slot"><span class="iv-img-slot__label">Ambiente 2 · 4:3</span></div>
-    <!-- ★ IMAGEN-4 -->
-    <div class="iv-img-slot"><span class="iv-img-slot__label">Ambiente 3 · 4:3</span></div>
+  <div>
+    <img src="https://www.innovasp.com/wp-content/uploads/2026/05/ENCIMERA-LEX-03.jpg"
+         alt="Encimera INNOVA Serie LEX"
+         style="width:100%; aspect-ratio:4/3; object-fit:cover;">
   </div>
-
-  <!-- Fila de tres detalles -->
-  <div class="iv-proyectos__row iv-proyectos__row--triptych">
-    <div class="iv-img-slot"><span class="iv-img-slot__label">Detalle 1</span></div>
-    <div class="iv-img-slot"><span class="iv-img-slot__label">Detalle 2</span></div>
-    <div class="iv-img-slot"><span class="iv-img-slot__label">Detalle 3</span></div>
-  </div>
-
-</section>
-
-
-<!-- ============================================================
-     BLOQUE MATERIAL
-     ============================================================ -->
-<div class="iv-material">
 
   <div>
-    <!-- ★ IMAGEN-5 — muestra de material (ratio 3:4) -->
-    <div class="iv-img-slot">
-      <span class="iv-img-slot__label">Muestra de material · 3:4</span>
-    </div>
+    <img src="https://www.innovasp.com/wp-content/uploads/2026/05/ENCIMERA-LEX-02.jpg"
+         alt="Encimera INNOVA Serie LEX"
+         style="width:100%; aspect-ratio:4/3; object-fit:cover;">
   </div>
-
-  <div class="iv-material__right">
-    <p class="iv-eyebrow">El material</p>
-
-    <h2 class="iv-h2">
-      Sólida, higiénica,<br><em>homogénea.</em>
-    </h2>
-
-    <p class="iv-body">
-      La Serie LEX está fabricada con acrílico puro sin rellenos.
-      No absorbe bacterias, es reparable y mantiene el color en toda su profundidad.
-    </p>
-
-    <p class="iv-body">
-      Disponible en <em>más de 40 acabados</em> mate y satinado.
-    </p>
-
-    <dl class="iv-stats">
-      <div><dt>100%</dt><dd>Acrílico puro</dd></div>
-      <div><dt>40+</dt><dd>Colores y acabados</dd></div>
-      <div><dt>12&nbsp;mm</dt><dd>Espesor estándar</dd></div>
-      <div><dt>10&nbsp;y</dt><dd>Garantía de fábrica</dd></div>
-    </dl>
-  </div>
-
 </div>
 
+<!-- Fila de tres detalles -->
+<div class="iv-proyectos__row iv-proyectos__row--triptych">
+  <div>
+    <img src="https://www.innovasp.com/wp-content/uploads/2026/05/ENCIMERA-LEX-05.jpg"
+         alt="Detalle encimera INNOVA Serie LEX"
+         style="width:100%; aspect-ratio:1/1; object-fit:cover;">
+  </div>
+  <div>
+    <img src="https://www.innovasp.com/wp-content/uploads/2026/05/ENCIMERA-LEX-06.jpg"
+         alt="Detalle encimera INNOVA Serie LEX"
+         style="width:100%; aspect-ratio:1/1; object-fit:cover;">
+  </div>
+  <div>
+    <img src="https://www.innovasp.com/wp-content/uploads/2026/05/ENCIMERA-LEX-07.jpg"
+         alt="Detalle encimera INNOVA Serie LEX"
+         style="width:100%; aspect-ratio:1/1; object-fit:cover;">
+  </div>
+</div>
+
+</section>
 
 <!-- ============================================================
      COMPARACIÓN DE ACRÍLICO
@@ -648,9 +633,9 @@
 <section class="iv-section">
 
   <div class="iv-compare__head">
-    <p class="iv-eyebrow">Por qué importa</p>
-    <h2 class="iv-h2">No todo el acrílico<br><em>es igual.</em></h2>
-    <p class="iv-body">La pureza del acrílico determina el rendimiento a largo plazo.</p>
+    <p class="iv-eyebrow">Material</p>
+    <h2 class="iv-h2">No todo el Solid Surface<br><em>es igual.</em></h2>
+    <p class="iv-body">El porcentaje de acrílico marca la longevidad del color.</p>
   </div>
 
   <div class="iv-compare__grid">
@@ -674,7 +659,7 @@
       <p class="iv-compare__no">Serie LEX</p>
       <p class="iv-compare__pct">100%</p>
       <p class="iv-compare__lbl">Acrílico puro</p>
-      <p class="iv-compare__note">Higiénico. Reparable. Garantía 10 años.</p>
+      <p class="iv-compare__note">Blanco por siempre.</p>
     </div>
 
   </div>
@@ -713,30 +698,23 @@
 
   <div class="iv-footer__top">
 
-    <div>
-      <p class="iv-footer__brand">INNOVA</p>
-      <p class="iv-footer__tag"><em>Superficies Sólidas</em></p>
-    </div>
+   <div>
+  <img src="https://www.innovasp.com/wp-content/uploads/2020/05/innovasp.png"
+       alt="INNOVA Superficies Sólidas"
+       style="max-width:180px; height:auto;">
+</div>
 
     <div class="iv-footer__cols">
 
-      <div>
-        <h4>Producto</h4>
-        <ul>
-          <li><a href="#inicio">Serie LEX 2026</a></li>
-          <!-- ★ PDF — misma URL que en el botón del hero -->
-          <li>
-            <a href="/wp-content/uploads/innova-catalogo-lex-2026.pdf"
-               target="_blank" rel="noopener">Catálogo PDF</a>
-          </li>
-        </ul>
-      </div>
 
       <div>
         <h4>Empresa</h4>
         <ul>
-          <li><a href="#">Quiénes somos</a></li>
-          <li><a href="#">Proyectos</a></li>
+          <li><a href="https://www.innovasp.com/#proyectos">Proyectos</a></li>
+          <li>
+            <a href="/wp-content/uploads/2026/05/INNOVA_Serie_LEX.pdf"
+               target="_blank" rel="noopener">Catálogo PDF</a>
+          </li>
         </ul>
       </div>
 
@@ -744,8 +722,8 @@
         <h4>Contacto</h4>
         <ul>
           <!-- ★ CONTACTO — pon tu email y teléfono reales -->
-          <li><a href="mailto:info@innova.es">info@innova.es</a></li>
-          <li><a href="tel:+34900000000">+34 900 000 000</a></li>
+          <li><a href="mailto:proyectos@innovasp.com">proyectos@innovasp.com</a></li>
+          <li><a href="tel:+34670966509">+34 670 96 65 09</a></li>
         </ul>
       </div>
 
